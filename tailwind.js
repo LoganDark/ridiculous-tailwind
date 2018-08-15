@@ -509,8 +509,8 @@ module.exports = {
 		'sm'    : '.125rem',
 		default : '.25rem',
 		'lg'    : '.5rem',
-		'full'  : '9999px',
-		... units
+		... units,
+		'full'  : '9999px'
 	},
 
 	/*
