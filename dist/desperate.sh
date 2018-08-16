@@ -3,11 +3,11 @@
 cp tailwind.min.css tailwind.des.css
 
 # shortening states
-sed -i '.bak' -e 's/\\([} ,][.:]\\)hover\\\\:/\\1hvr\\\\:/g'          tailwind.des.css
-sed -i '.bak' -e 's/\\([} ,][.:]\\)focus\\\\:/\\1fcs\\\\:/g'          tailwind.des.css
-sed -i '.bak' -e 's/\\([} ,][.:]\\)active\\\\:/\\1actv\\\\:/g'        tailwind.des.css
-sed -i '.bak' -e 's/\\([} ,][.:]\\)group\\\\:/\\1grp\\\\:/g'          tailwind.des.css
-sed -i '.bak' -e 's/\\([} ,][.:]\\)group-hover\\\\:/\\1grphvr\\\\:/g' tailwind.des.css
+sed -i '.bak' -e 's/\\([} ,][.:]\\)hover\\\\:/\\1hvr\\\\:/g'          tailwind.des.css # hover       -> hvr
+sed -i '.bak' -e 's/\\([} ,][.:]\\)focus\\\\:/\\1fcs\\\\:/g'          tailwind.des.css # focus       -> fcs
+sed -i '.bak' -e 's/\\([} ,][.:]\\)active\\\\:/\\1actv\\\\:/g'        tailwind.des.css # active      -> actv
+sed -i '.bak' -e 's/\\([} ,][.:]\\)group/\\1grp/g'                    tailwind.des.css # group       -> grp
+sed -i '.bak' -e 's/\\([} ,][.:]\\)group-hover\\\\:/\\1grphvr\\\\:/g' tailwind.des.css # group-hover -> grphvr
 
 # shortening colors
 sed -i '.bak' -e 's/-darkest/-d3/g'  tailwind.des.css
