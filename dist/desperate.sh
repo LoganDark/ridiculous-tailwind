@@ -23,6 +23,7 @@ sed -i '.bak' -E -e 's/-light/-l1/g'    tailwind.des.css
 sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)float/\\1flt/g'             tailwind.des.css # float          -> flt
 sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)overflow/\\1oflw/g'         tailwind.des.css # overflow       -> oflw
 sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)text/\\1txt/g'              tailwind.des.css # text           -> txt
+sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)font/\\1fnt/g'              tailwind.des.css # font           -> fnt
 sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)leading/\\1ldng/g'          tailwind.des.css # leading        -> ldng
 sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)align/\\1algn/g'            tailwind.des.css # align          -> algn
 sed -i '.bak' -E -e 's/([} ,\\][:]|\\.)whitespace/\\1wsp/g'        tailwind.des.css # whitespace     -> wsp
