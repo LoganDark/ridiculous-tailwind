@@ -139,7 +139,7 @@ let gen = (
 		acc,
 		cur,
 		i
-	) => ( acc[ '' + ( i * iMultiplier ) + unit ] = Math.trunc ( cur * multiplier * 100 ) / 100 + valSuf, acc ),
+	) => ( acc[ '' + ( i * iMultiplier ) + unit ] = Math.trunc ( cur * multiplier * 100000 ) / 100000 + valSuf, acc ),
 	{}
 )
 
@@ -152,7 +152,7 @@ let pixels = gen (
 
 let rems = {
 	...gen (
-		64,
+		96,
 		'',
 		0.25,
 		'rem'
