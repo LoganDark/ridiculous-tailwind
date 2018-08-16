@@ -139,7 +139,7 @@ let gen = (
 		acc,
 		cur,
 		i
-	) => ( acc[ '' + ( i * iMultiplier ) + unit ] = cur * multiplier + valSuf, acc ),
+	) => ( acc[ '' + ( i * iMultiplier ) + unit ] = Math.trunc ( cur * multiplier * 100 ) / 100 + valSuf, acc ),
 	{}
 )
 
