@@ -2,7 +2,7 @@
 
 Ridiculous Tailwind is the [Tailwind](http://tailwindcss.com/) CSS framework with some extremely generous options enabled for those who are just developing locally and don't want to deal with building things super specifically.
 
-<span style="font-size: 2em">Be warned that this build of Tailwind, even minified, is about 9.2 MB in size.</span>
+<span style="font-size: 2em">Be warned that this build of Tailwind, even minified, is about 8.5 MB in size.</span>
 
 Before I list all the changes I've made, let me define some things:
 
@@ -54,8 +54,58 @@ Now, let's get to the features:
 
 ### POSIX(-like)
 
-`cd` to `dist`, and run `./build.sh && ./minify.sh` in `bash`, or your shell's equivalent.
+`cd` to `dist`, and run `./build.sh && ./minify.sh && ./desperate.sh` in `bash`, or your shell's equivalent.
+
+`desperate.sh` uses the macOS version of `sed`. You may have to remove the empty strings after the `-i` option if `sed` complains.
 
 ### Windows
 
 Sorry man.
+
+## Being Desperate
+
+Want smaller sizes? Well, if you're desperate, you can use `tailwind.des.css`.
+
+That's the desperate version, which basically has these conversions:
+
+- States:
+    - `hover` -> `hvr`
+    - `focus` -> `fcs`
+    - `active` -> `actv`
+    - `group` -> `grp`
+    - `group-hover` -> `grphvr`
+- Colors:
+    - `darkest` -> `d3`
+    - `darker` -> `d2`
+    - `dark` -> `d1`
+    - `lightest` -> `l3`
+    - `lighter` -> `l2`
+    - `light` -> `l1`
+- Class names:
+    - `float` -> `flt`
+    - `overflow` -> `oflw`
+    - `text` -> `txt`
+    - `leading` -> `ldng`
+    - `align` -> `algn`
+    - `whitespace` -> `wsp`
+    - `border` -> `bdr`
+    - `rounded` -> `rd`
+    - `flex` -> `flx`
+    - `items` -> `itms`
+    - `content` -> `cont`
+    - `self` -> `slf`
+    - `justify` -> `jst`
+    - `min/max-w/h` -> `mn/mx-w/h`
+    - `table` -> `tbl`
+    - `cursor` -> `csr`
+    - `pointer-events` -> `ptr`
+    - `resize` -> `rsz`
+    - `select` -> `slct`
+    - `shadow` -> `shdw`
+    - `opacity` -> `opc`
+    - `fill` -> `fl`
+    - `stroke` -> `strk`
+
+It's about 7.9 MB in size. That's only approximately a ~600KB reduction.
+
+Please, still don't use this in production.
