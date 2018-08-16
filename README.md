@@ -86,6 +86,7 @@ That's the desperate version, which basically has these conversions:
     - `overflow` -> `oflw`
     - `text` -> `txt`
     - `font` -> `fnt`
+    - `tracking` -> `tkng`
     - `leading` -> `ldng`
     - `align` -> `algn`
     - `whitespace` -> `wsp`
