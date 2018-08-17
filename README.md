@@ -74,6 +74,8 @@ That's the desperate version, which basically has these conversions:
     - `active` -> `actv`
     - `group` -> `grp`
     - `group-hover` -> `grphvr`
+- Screen sizes:
+    - All normal, but `xs` is added (480px or more)
 - Colors:
     - `darkest` -> `d3`
     - `darker` -> `d2`
