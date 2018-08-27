@@ -27,7 +27,7 @@ Before I list all the changes I've made, let me define some things:
 Now, let's get to the features:
 
 - Colors are normal
-- Screen sizes are normal
+- Screen sizes are normal, but `xs` is added (480px or more)
 - Fonts are normal
 - Text sizes are normal + `units`
 - Font weights are normal
@@ -74,8 +74,6 @@ That's the desperate version, which basically has these conversions:
     - `active` -> `actv`
     - `group` -> `grp`
     - `group-hover` -> `grphvr`
-- Screen sizes:
-    - All normal, but `xs` is added (480px or more)
 - Colors:
     - `darkest` -> `d3`
     - `darker` -> `d2`
