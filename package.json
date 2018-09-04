@@ -7,7 +7,7 @@
 		"build"     : "cd dist && . build.sh",
 		"minify"    : "cd dist && . minify.sh",
 		"desperate" : "cd dist && . desperate.sh",
-		"build_all" : "npm run build && npm run minify && npm run build_all"
+		"build_all" : "npm run build && npm run minify && npm run desperate"
 	},
 	"author"       : "LoganDark",
 	"license"      : "MIT",

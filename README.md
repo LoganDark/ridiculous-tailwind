@@ -42,7 +42,7 @@ Now, let's get to the features:
 - width, height, min-width, min-height are basically 'screen' + `units`
 - max-width and max-height are normal + `units`
 - Padding, margin, negative margin are `units`
-- Shadows are normal + `-outline` suffix is included for every default name
+- Shadows are normal + `-outline` suffix is included for every default name (for example, `shadow-sm-outline` or `shadow-default-outline`)
 - z-index is 'auto' + any integer from 0 to 100 inclusive
 - Opacity is any integer divisible by 5 from 0 to 100 inclusive
 - SVG fill and stroke are currentColor + `colors`
