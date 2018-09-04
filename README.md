@@ -42,7 +42,7 @@ Now, let's get to the features:
 - width, height, min-width, min-height are basically 'screen' + `units`
 - max-width and max-height are normal + `units`
 - Padding, margin, negative margin are `units`
-- Shadows are normal
+- Shadows are normal + `-outline` suffix is included for every default name
 - z-index is 'auto' + any integer from 0 to 100 inclusive
 - Opacity is any integer divisible by 5 from 0 to 100 inclusive
 - SVG fill and stroke are currentColor + `colors`
@@ -54,9 +54,9 @@ Now, let's get to the features:
 
 ### POSIX(-like)
 
-`cd` to `dist`, and run `./build.sh && ./minify.sh && ./desperate.sh` in `bash`, or your shell's equivalent.
+Run `npm run build_all`, or in order, `build`, `minify`, and then `desperate` (they're `npm` scripts).
 
-`desperate.sh` uses the macOS version of `sed`. You may have to remove the empty strings after the `-i` option if `sed` complains.
+`desperate.sh` (the `desperate` script) uses the macOS version of `sed`. You may have to remove the strings after the `-i` option if `sed` complains.
 
 ### Windows
 

@@ -1,15 +1,18 @@
 {
-  "name": "tailwind",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "clean-css-cli": "^4.2.1",
-    "tailwindcss": "^0.6.4"
-  }
+	"name"         : "tailwind",
+	"version"      : "1.0.0",
+	"description"  : "",
+	"main"         : "index.js",
+	"scripts"      : {
+		"build"     : "cd dist && . build.sh",
+		"minify"    : "cd dist && . minify.sh",
+		"desperate" : "cd dist && . desperate.sh",
+		"build_all" : "npm run build && npm run minify && npm run build_all"
+	},
+	"author"       : "LoganDark",
+	"license"      : "MIT",
+	"dependencies" : {
+		"clean-css-cli" : "^4.2.1",
+		"tailwindcss"   : "^0.6.4"
+	}
 }
